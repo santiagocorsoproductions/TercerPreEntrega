@@ -1,0 +1,13 @@
+:root {
+    /* Var imagen principal */
+    --imagen-principal-pagina: url("../img/fondo.jpg");
+    /* Var display general (body o main de ultima) */
+    --display-general-pagina: grid;
+    /* Display secundario de contenedores secundarios a body o main */
+    --display-contenedores-secundarios: flex;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}

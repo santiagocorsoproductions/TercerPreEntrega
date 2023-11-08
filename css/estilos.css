@@ -1,3 +1,57 @@
+:root {
+  /* Var imagen principal */
+  --imagen-principal-pagina: url("../img/fondo.jpg");
+  /* Var display general (body o main de ultima) */
+  --display-general-pagina: grid;
+  /* Display secundario de contenedores secundarios a body o main */
+  --display-contenedores-secundarios: flex;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* Aplico la variable de imagen principal con background imagen */
+  background-image: var(--imagen-principal-pagina);
+  /* aplico el resto de propiedades de forma normal */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+}
+header .menuNav {
+  background-color: #051955;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+header .menuNav .imagenLogo {
+  width: 80px;
+  height: 80px;
+  border-radius: 2px;
+}
+header .menuNav ul {
+  cursor: pointer;
+  list-style-type: none;
+  padding: 10px 10px;
+  /* margin: auto; */
+}
+header .menuNav li, header .menuNav a {
+  text-decoration: none;
+  color: #FC8D00;
+  padding: 10px 10px 10px;
+  text-transform: uppercase;
+}
+header .menuNav .menuNav li {
+  display: inline-block;
+  font-weight: 50px;
+}
 
 /*# sourceMappingURL=estilos.css.map */

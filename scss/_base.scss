@@ -1,0 +1,9 @@
+
+body {
+    /* Aplico la variable de imagen principal con background imagen */
+    background-image: var(--imagen-principal-pagina);
+    /* aplico el resto de propiedades de forma normal */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
