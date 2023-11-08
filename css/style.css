@@ -1,0 +1,433 @@
+/* Llamo a la pseudo clase root para poner variables */
+:root {
+    /* Var imagen principal */
+    --imagen-principal-pagina: url("../img/fondo.jpg");
+    /* Var display general (body o main de ultima) */
+    --display-general-pagina: grid;
+    /* Display secundario de contenedores secundarios a body o main */
+    --display-contenedores-secundarios: flex;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Aplico la variable de imagen principal con background imagen */
+    background-image: var(--imagen-principal-pagina);
+    /* aplico el resto de propiedades de forma normal */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* header{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    
+} TENGO QUE VER SI HACE FALTA O NO PERO POR AHORA CON EL FIXED TOP DE BOOTSTRAP ESTA OK*/
+
+.menuNav {
+    background-color: #051955;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imagenLogo {
+    width: 80px;
+    height: 80px;
+    border-radius: 2px;
+}
+
+ul {
+    cursor: pointer;
+    list-style-type: none;
+    padding: 10px 10px;
+    /* margin: auto; */
+}
+
+li,
+a {
+    text-decoration: none;
+    color: #FC8D00;
+    padding: 10px 10px 10px;
+    text-transform: uppercase;
+}
+
+.menuNav li {
+    display: inline-block;
+    font-weight: 50px;
+}
+
+
+.presentacionPagina {
+    background-image: url(../img/-12.jpg);
+    background-size: cover;
+    background-color: #020c28;
+    height: 90vh;
+    width: 100%;
+    /* background-position: center;
+   position: relative;
+   z-index: 1;
+   border: none; */
+}
+
+/* .presentacionPagina::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+} */
+
+.primerArticulo {
+    /* background-color: #FC8D00; */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.segundoArticulo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cuartoArticulo {
+    display: flex;
+    /* position: relative; queria tratar de poner el donde estamos por encima del mapa pero no lo pude seguir ubicando*/
+    margin: auto;
+
+}
+
+.formularioIndex {
+    border: 1px #FC8D00 outset;
+    background-color: #5f3702;
+    margin-left: 20px;
+    border-radius: 10px;
+    /* height:fit-content;  no hace falta la maoyria del tiempo poner height y dejar que se autoajuste*/
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    background-color: #051955;
+    border: #020c28 4px double;
+    max-width: 100%;
+    /* height: 120px; */
+
+}
+
+/* Hasta acá estilicé contenedores semanticos */
+/* Ahora empiezan los elementos hijos con box modeling o positions */
+.imagenIndex1 {
+    object-fit: contain;
+    width: 720px;
+    border-radius: 7px;
+    /* height: 480px; */
+}
+
+
+/* .textoCentral{
+background-color: rgba(0, 66, 247, 0.7);
+padding: 20px;
+border-radius: 2px;
+max-width: 80%;
+z-index: 2;
+
+} */
+.textoPresentacion {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #FC8D00;
+    letter-spacing: 2px;
+}
+
+.botonHagamosTuIdeaRealidad {
+    background-color: #FC8D00;
+    box-shadow: 6px 5px 24px #666666;
+    font-family: Arial;
+    color: orangered;
+    font-size: 27px;
+    padding: 19px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* .imgprimerarticulo {
+    width: fit-content;
+} */
+
+.primerArticuloh2 {
+    color: #FC8D00;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.primerArticulop {
+    color: #FC8D00;
+}
+
+.tituloConocenos {
+    /* No sirve poenr porcentaje porque se me corre mucho de contenedor */
+    font-size: 4rem;
+    text-align: center;
+    margin: auto;
+    color: #FC8D00;
+}
+
+.parrafoConocenos {
+    color: #fc5800;
+    font-size: 1.5rem;
+    padding: 50px;
+}
+
+.botonesConocenos {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.segundoArticulo input {
+    height: 10vh;
+    width: 10vw;
+    color: #FC8D00;
+    background-color: #5f3702;
+    box-shadow: 6px 5px 24px #2b1801;
+    border-radius: 5px;
+    border-style: groove;
+    font-size: 1rem;
+}
+
+.tituloDondeEstamos {
+    color: red;
+    text-transform: uppercase;
+    /* position: absolute; */
+    text-align: center;
+    font-size: 4rem;
+}
+
+
+
+.formularioIndex h2 {
+    font-size: 4rem;
+    color: #FC8D00;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    content: 10px;
+}
+
+.formularioIndex input,
+select,
+h3,
+p {
+    margin: 5px;
+}
+
+.botonEnviar {
+    width: 120px;
+    height: 50px;
+}
+
+.botonResetear {
+    float: right;
+}
+
+
+
+.footerIndex img{
+    width: 50px;
+    height: 50px;
+}
+.footerIndex a{
+    height: 50px;
+}
+
+
+.derechosfooter {
+    color: #5e3500;
+    display: inline-block;
+    /* margin: 0px; */
+    text-align: end;
+    width: 5000px;
+    margin-top: 150px;
+}
+
+/* Aplicando pseudoclases y pseudoelementos a mi index */
+/* Para el boton de hagamos realidad tu sueño */
+.botonHagamosTuIdeaRealidad:hover {
+    background-color: #c89859;
+    cursor: pointer;
+}
+
+.botonHagamosTuIdeaRealidad:active {
+    background-color: #fc5800;
+    color: #5e3500;
+}
+
+/* Aplico mismos estilos a botones conocenos */
+.segundoArticulo input:active {
+    background-color: #fc5800;
+    color: #5e3500;
+}
+
+.segundoArticulo input:hover {
+    background-color: #c89859;
+    cursor: pointer;
+}
+
+@media (max-width:1200px){
+    .imagenIndex1{
+width: 85%;
+    }
+}
+@media (max-width: 768px) {
+    /* .menuNav {
+        width: auto;
+    } */
+.textoPresentacion{
+    font-size: 2rem;
+}
+    .botonHagamosTuIdeaRealidad {
+        font-size: 50%;
+    }
+
+    .primerArticulo{
+        margin: 5px;
+    }
+    .botonesConocenos {
+        width: 2px;
+        font-size: inherit;
+    }
+
+    .primerArticuloh2 {
+        font-size: 1.5rem;
+    }
+
+    .primerArticulop {
+        text-align: center;
+    }
+
+    .imagenIndex1 {
+        display: block;
+        width: 85%;
+        margin: auto;
+
+    }
+
+    .tituloDondeEstamos {
+        font-size: inherit;
+    }
+
+    .cuartoArticulo {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+
+    .formularioIndex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+    }
+
+    .formularioIndex h3,
+    p,
+    h2,
+    input {
+        width: 100%;
+    }
+
+    .cuartoArticulo h2 {
+        font-size: 2rem;
+    }
+
+    .mapaDondeEstamos {
+        margin: 2px;
+    }
+
+    .footerIndex {
+        width: 100%;
+    }
+}
+
+@media (max-width: 599px) {
+    .primerArticulo {
+        display: flex;
+        flex-direction: column;
+    }
+   .formularioIndex{
+    margin-right: 3vw;
+    margin-top: 20px;
+   }
+}
+
+
+/* ESTILIZANDO EL phtoography con bootstrap */
+
+.carousel-inner{
+    height: 600px;
+}
+.mapaUbicacionesTrabajos{
+    margin-right: 10px;
+}
+.textoSlides{
+    color: #FC8D00;
+    font-size: 4rem;
+}
+
+.textoUbicaciones{
+    margin: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: #fc5800;
+}
+
+.articulo{
+    background-color: #051955;
+}
+
+.articulo h3{
+    color: #fc5800;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.articulo p{
+    color: #fc5800;
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media (max-width:768px){
+
+    .articulo h3{
+        color: #fc5800;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .articulo p{
+        color: #fc5800;
+        font-size: 0.5rem;
+        text-align: center;
+    }
+    .ubicacionesContenido{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .ubicacionesContenido iframe{
+        width: fit-content;
+    }
+}
