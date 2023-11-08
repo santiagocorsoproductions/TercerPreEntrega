@@ -1,0 +1,39 @@
+@mixin formularios {
+    border: 1px $letras--naranjas outset;
+    background-color: #5f3702;
+    margin-left: 20px;
+    border-radius: 10px;
+    /* height:fit-content;  no hace falta la maoyria del tiempo poner height y dejar que se autoajuste*/
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        font-size: 4rem;
+        color: #FC8D00;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+        content: 10px;
+    }
+
+    input,
+    select,
+    h3,
+    p {
+        margin: 5px;
+    }
+
+    .botonEnviar {
+        width: 120px;
+        height: 50px;
+    }
+
+    .botonResetear {
+        float: right;
+    }
+}
+
+.formularioIndex {
+    @include formularios;
+}
