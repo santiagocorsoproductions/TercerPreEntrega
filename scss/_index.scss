@@ -1,7 +1,6 @@
 .presentacionPagina {
     background-image: $bg--pagina;
     background-size: cover;
-    background-color: #020c28;
     height: 90vh;
     width: 100%;
 
@@ -47,10 +46,10 @@
 }
 
 .primerArticulo {
-    /* background-color: #FC8D00; */
     display: flex;
     justify-content: space-around;
     width: 100%;
+    
 
     .primerArticuloh2 {
         color: #FC8D00;
@@ -67,7 +66,6 @@
 .segundoArticulo {
     display: flex;
     flex-wrap: wrap;
-
     .tituloConocenos {
         /* No sirve poenr porcentaje porque se me corre mucho de contenedor */
         font-size: 4rem;
@@ -85,8 +83,8 @@
     .botonesConocenos {
         display: flex;
         justify-content: center;
-        margin: auto;
-    }
+        margin: 0px 10px;
+        width: 100%;
 
     .segundoArticulo input {
         height: 10vh;
@@ -108,7 +106,9 @@
     }
 }
 }
+}
 .tituloDondeEstamos {
+    
     color: red;
     text-transform: uppercase;
     /* position: absolute; */
@@ -116,6 +116,7 @@
     font-size: 4rem;
 }
 .cuartoArticulo {
+ 
     display: flex;
     /* position: relative; queria tratar de poner el donde estamos por encima del mapa pero no lo pude seguir ubicando*/
     margin: auto;

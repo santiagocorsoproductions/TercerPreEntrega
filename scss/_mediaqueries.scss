@@ -15,11 +15,7 @@ width: 85%;
     .primerArticulo{
         margin: 5px;
     }
-    .botonesConocenos {
-        width: 2px;
-        font-size: inherit;
-    }
-
+    
     .primerArticuloh2 {
         font-size: 1.5rem;
     }
@@ -33,6 +29,12 @@ width: 85%;
         width: 85%;
         margin: auto;
 
+    }
+.botonesConocenos {
+        display: flex;
+        justify-content: center;
+        width: 10px;
+        font-size: inherit;
     }
 
     .tituloDondeEstamos {
@@ -74,12 +76,45 @@ width: 85%;
 }
 
 @media (max-width: 599px) {
+    .presentacionPagina{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    .botonHagamosTuIdeaRealidad{
+       font-size: 1rem;
+       width: 75%;
+       align-self: center;
+       margin-left: 10px;
+    }
+}
     .primerArticulo {
         display: flex;
         flex-direction: column;
     }
+
+    .cuartoArticulo{
+        width: 95%;
    .formularioIndex{
     margin-right: 3vw;
     margin-top: 20px;
+    width: 300px;
+    height:500px;
+    h2{
+        font-size: 2rem;
+
+    }
+    input{
+       @include textoTamReducido;
+       
+    }
+    h3{
+       @include textoTamReducido;
+       font-size: 0.2rem;
+    }
+    select{
+        @include textoTamReducido;
+    }
    }
+}
 }
