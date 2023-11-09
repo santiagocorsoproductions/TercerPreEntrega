@@ -39,3 +39,7 @@
     height: 5%;
     width: 100%;
 }
+
+@mixin colorBloques{
+    background-image: linear-gradient(to top right, $bloques--colorgradiente, $bloques--colorgradiente2);
+}

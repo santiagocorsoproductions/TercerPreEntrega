@@ -1,0 +1,14 @@
+/*Estilizando photography*/
+.articulo{
+margin: 5px;
+width: 400px;
+}
+.primero{
+    @include colorBloques;
+}
+.segundo{
+    @include colorBloques;
+}
+.tercero{
+    @include colorBloques;
+}
