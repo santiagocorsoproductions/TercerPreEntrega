@@ -190,7 +190,12 @@ body {
 /*Estilizando photography*/
 .articulo {
   margin: 5px;
-  width: 400px;
+}
+
+.textoUbicaciones {
+  color: red;
+  font-size: 3rem;
+  text-align: center;
 }
 
 .primero {
@@ -222,6 +227,10 @@ footer a {
   /*Media queries para index*/
   .imagenIndex1 {
     width: 85%;
+  }
+  /*Media queries para photography*/
+  .primero {
+    margin-left: 4px;
   }
 }
 @media (max-width: 768px) {
@@ -283,6 +292,10 @@ footer a {
   .footerIndex {
     width: 100%;
   }
+  /*Media queries para photography*/
+  .textoUbicaciones {
+    font-size: 1rem;
+  }
 }
 @media (max-width: 599px) {
   /*Media queries para index*/
@@ -326,6 +339,7 @@ footer a {
     height: 5%;
     width: 100%;
   }
+  /*Media queries para photography*/
 }
 
 /*# sourceMappingURL=estilos.css.map */

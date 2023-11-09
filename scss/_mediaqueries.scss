@@ -3,6 +3,10 @@
     .imagenIndex1{
 width: 85%;
     }
+ /*Media queries para photography*/
+ .primero{
+    margin-left: 4px;
+ }   
 }
 @media (max-width: 768px) {
     /*Media queries para index*/
@@ -75,6 +79,12 @@ width: 85%;
     .footerIndex {
         width: 100%;
     }
+    /*Media queries para photography*/
+    .textoUbicaciones{
+        font-size: 1rem;
+       
+    }
+
 }
 
 @media (max-width: 599px) {
@@ -120,4 +130,5 @@ width: 85%;
     }
    }
 }
+/*Media queries para photography*/
 }

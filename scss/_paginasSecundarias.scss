@@ -1,7 +1,11 @@
 /*Estilizando photography*/
 .articulo{
 margin: 5px;
-width: 400px;
+}
+.textoUbicaciones{
+    color: red;
+    font-size: 3rem;
+    text-align: center;
 }
 .primero{
     @include colorBloques;
