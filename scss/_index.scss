@@ -67,7 +67,6 @@
     display: flex;
     flex-wrap: wrap;
     .tituloConocenos {
-        /* No sirve poenr porcentaje porque se me corre mucho de contenedor */
         font-size: 4rem;
         text-align: center;
         margin: auto;
@@ -111,14 +110,12 @@
     
     color: red;
     text-transform: uppercase;
-    /* position: absolute; */
     text-align: center;
     font-size: 4rem;
 }
 .cuartoArticulo {
  
     display: flex;
-    /* position: relative; queria tratar de poner el donde estamos por encima del mapa pero no lo pude seguir ubicando*/
     margin: auto;
     
     .formularioIndex {
