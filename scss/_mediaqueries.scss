@@ -1,0 +1,84 @@
+@media (max-width:1200px){
+    .imagenIndex1{
+width: 85%;
+    }
+}
+@media (max-width: 768px) {
+.textoPresentacion{
+    font-size: 2rem;
+}
+    .botonHagamosTuIdeaRealidad {
+        font-size: 50%;
+    }
+
+    .primerArticulo{
+        margin: 5px;
+    }
+    .botonesConocenos {
+        width: 2px;
+        font-size: inherit;
+    }
+
+    .primerArticuloh2 {
+        font-size: 1.5rem;
+    }
+
+    .primerArticulop {
+        text-align: center;
+    }
+
+    .imagenIndex1 {
+        display: block;
+        width: 85%;
+        margin: auto;
+
+    }
+
+    .tituloDondeEstamos {
+        font-size: inherit;
+    }
+
+    .cuartoArticulo {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+
+    .formularioIndex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+    }
+
+    .formularioIndex h3,
+    p,
+    h2,
+    input {
+        width: 100%;
+    }
+
+    .cuartoArticulo h2 {
+        font-size: 2rem;
+    }
+
+    .mapaDondeEstamos {
+        margin: 2px;
+    }
+
+    .footerIndex {
+        width: 100%;
+    }
+}
+
+@media (max-width: 599px) {
+    .primerArticulo {
+        display: flex;
+        flex-direction: column;
+    }
+   .formularioIndex{
+    margin-right: 3vw;
+    margin-top: 20px;
+   }
+}

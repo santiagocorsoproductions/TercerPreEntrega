@@ -59,9 +59,47 @@ body {
   position: relative;
   z-index: 1;
   border: none; */
+  /* .textoCentral{
+  background-color: rgba(0, 66, 247, 0.7);
+  padding: 20px;
+  border-radius: 2px;
+  max-width: 80%;
+  z-index: 2;
+
+  } */
 }
 .presentacionPagina:hover {
   backdrop-filter: blur(10px);
+}
+.presentacionPagina .imagenIndex1 {
+  object-fit: contain;
+  width: 720px;
+  border-radius: 7px;
+  /* height: 480px; */
+}
+.presentacionPagina .textoPresentacion {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #FC8D00;
+  letter-spacing: 2px;
+}
+.presentacionPagina .botonHagamosTuIdeaRealidad {
+  background-color: #FC8D00;
+  box-shadow: 6px 5px 24px #666666;
+  font-family: Arial;
+  color: orangered;
+  font-size: 27px;
+  padding: 19px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.presentacionPagina .botonHagamosTuIdeaRealidad:hover {
+  background-color: #c89859;
+  cursor: pointer;
+}
+.presentacionPagina .botonHagamosTuIdeaRealidad:active {
+  background-color: #fc5800;
+  color: #5e3500;
 }
 
 .primerArticulo {
@@ -70,10 +108,53 @@ body {
   justify-content: space-around;
   width: 100%;
 }
+.primerArticulo .primerArticuloh2 {
+  color: #FC8D00;
+  font-size: 3rem;
+  text-align: center;
+}
+.primerArticulo .primerArticulop {
+  color: #FC8D00;
+}
 
 .segundoArticulo {
   display: flex;
   flex-wrap: wrap;
+}
+.segundoArticulo .tituloConocenos {
+  /* No sirve poenr porcentaje porque se me corre mucho de contenedor */
+  font-size: 4rem;
+  text-align: center;
+  margin: auto;
+  color: #FC8D00;
+}
+.segundoArticulo .parrafoConocenos {
+  color: #fc5800;
+  font-size: 1.5rem;
+  padding: 50px;
+}
+.segundoArticulo .botonesConocenos {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.segundoArticulo .segundoArticulo input {
+  height: 10vh;
+  width: 10vw;
+  color: #FC8D00;
+  background-color: #5f3702;
+  box-shadow: 6px 5px 24px #2b1801;
+  border-radius: 5px;
+  border-style: groove;
+  font-size: 1rem;
+}
+.segundoArticulo .segundoArticulo input:active {
+  background-color: #fc5800;
+  color: #5e3500;
+}
+.segundoArticulo .segundoArticulo input:hover {
+  background-color: #c89859;
+  cursor: pointer;
 }
 
 .cuartoArticulo {
@@ -81,8 +162,7 @@ body {
   /* position: relative; queria tratar de poner el donde estamos por encima del mapa pero no lo pude seguir ubicando*/
   margin: auto;
 }
-
-.formularioIndex {
+.cuartoArticulo .formularioIndex {
   border: 1px #FC8D00 outset;
   background-color: #5f3702;
   margin-left: 20px;
@@ -92,7 +172,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.formularioIndex h2 {
+.cuartoArticulo .formularioIndex h2 {
   font-size: 4rem;
   color: #FC8D00;
   text-align: center;
@@ -100,18 +180,90 @@ body {
   padding: 10px;
   content: 10px;
 }
-.formularioIndex input,
-.formularioIndex select,
-.formularioIndex h3,
-.formularioIndex p {
+.cuartoArticulo .formularioIndex input,
+.cuartoArticulo .formularioIndex select,
+.cuartoArticulo .formularioIndex h3,
+.cuartoArticulo .formularioIndex p {
   margin: 5px;
 }
-.formularioIndex .botonEnviar {
+.cuartoArticulo .formularioIndex .botonEnviar {
   width: 120px;
   height: 50px;
 }
-.formularioIndex .botonResetear {
+.cuartoArticulo .formularioIndex .botonResetear {
   float: right;
+}
+
+@media (max-width: 1200px) {
+  .imagenIndex1 {
+    width: 85%;
+  }
+}
+@media (max-width: 768px) {
+  .textoPresentacion {
+    font-size: 2rem;
+  }
+  .botonHagamosTuIdeaRealidad {
+    font-size: 50%;
+  }
+  .primerArticulo {
+    margin: 5px;
+  }
+  .botonesConocenos {
+    width: 2px;
+    font-size: inherit;
+  }
+  .primerArticuloh2 {
+    font-size: 1.5rem;
+  }
+  .primerArticulop {
+    text-align: center;
+  }
+  .imagenIndex1 {
+    display: block;
+    width: 85%;
+    margin: auto;
+  }
+  .tituloDondeEstamos {
+    font-size: inherit;
+  }
+  .cuartoArticulo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+  .formularioIndex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+  }
+  .formularioIndex h3,
+  p,
+  h2,
+  input {
+    width: 100%;
+  }
+  .cuartoArticulo h2 {
+    font-size: 2rem;
+  }
+  .mapaDondeEstamos {
+    margin: 2px;
+  }
+  .footerIndex {
+    width: 100%;
+  }
+}
+@media (max-width: 599px) {
+  .primerArticulo {
+    display: flex;
+    flex-direction: column;
+  }
+  .formularioIndex {
+    margin-right: 3vw;
+    margin-top: 20px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

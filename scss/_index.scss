@@ -1,38 +1,131 @@
 .presentacionPagina {
-    background-image: url(../img/-12.jpg);
+    background-image: $bg--pagina;
     background-size: cover;
     background-color: #020c28;
     height: 90vh;
     width: 100%;
+
     /* background-position: center;
    position: relative;
    z-index: 1;
    border: none; */
-   &:hover{
-    backdrop-filter: blur(10px);
-   }
-   }
+    &:hover {
+        backdrop-filter: blur(10px);
+    }
 
-   .primerArticulo {
+    .imagenIndex1 {
+        object-fit: contain;
+        width: 720px;
+        border-radius: 7px;
+        /* height: 480px; */
+    }
+
+
+    /* .textoCentral{
+background-color: rgba(0, 66, 247, 0.7);
+padding: 20px;
+border-radius: 2px;
+max-width: 80%;
+z-index: 2;
+
+} */
+    .textoPresentacion {
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: #FC8D00;
+        letter-spacing: 2px;
+    }
+
+    .botonHagamosTuIdeaRealidad {
+        background-color: #FC8D00;
+        box-shadow: 6px 5px 24px #666666;
+        font-family: Arial;
+        color: orangered;
+        font-size: 27px;
+        padding: 19px;
+        text-decoration: none;
+        border-radius: 5px;
+        &:hover {
+            background-color: #c89859;
+            cursor: pointer;
+        }
+        
+        &:active {
+            background-color: #fc5800;
+            color: #5e3500;
+        }
+    }
+}
+
+.primerArticulo {
     /* background-color: #FC8D00; */
     display: flex;
     justify-content: space-around;
     width: 100%;
+
+    .primerArticuloh2 {
+        color: #FC8D00;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .primerArticulop {
+        color: #FC8D00;
+    }
 
 }
 
 .segundoArticulo {
     display: flex;
     flex-wrap: wrap;
+
+    .tituloConocenos {
+        /* No sirve poenr porcentaje porque se me corre mucho de contenedor */
+        font-size: 4rem;
+        text-align: center;
+        margin: auto;
+        color: #FC8D00;
+    }
+
+    .parrafoConocenos {
+        color: #fc5800;
+        font-size: 1.5rem;
+        padding: 50px;
+    }
+
+    .botonesConocenos {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .segundoArticulo input {
+        height: 10vh;
+        width: 10vw;
+        color: #FC8D00;
+        background-color: #5f3702;
+        box-shadow: 6px 5px 24px #2b1801;
+        border-radius: 5px;
+        border-style: groove;
+        font-size: 1rem;
+        &:active {
+            background-color: #fc5800;
+            color: #5e3500;
+        }
+        
+        &:hover {
+            background-color: #c89859;
+            cursor: pointer;
+    }
+}
 }
 
 .cuartoArticulo {
     display: flex;
     /* position: relative; queria tratar de poner el donde estamos por encima del mapa pero no lo pude seguir ubicando*/
     margin: auto;
-
-}
-
-.formularioIndex {
+    
+    .formularioIndex {
     @include formularios;
+}
 }
