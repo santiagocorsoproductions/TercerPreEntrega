@@ -9,16 +9,18 @@
     <link rel="shortcut icon" href="img/imagen perfil fadu.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
-     <header class="navbar navbar-expand-lg fixed-top menuNav ">
+    <header class="navbar navbar-expand-lg fixed-top menuNav ">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="img/imagen-logo.jpg" alt="Imagen santiago corso productions"
                     class="imagenLogo img-fluid"></a>
-            <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <nav class="collapse navbar-collapse" id="navbarNav">
@@ -43,19 +45,22 @@
                     </li>
                 </ul>
             </nav>
-        </div> 
+        </div>
     </header>
     <main class="container-fluid">
         <div class="row">
-            <div class=" col-xl-12 col-md-12 col-xs-12 d-flex flex-column align-items-center justify-content-center presentacionPagina">
-                    <h1 class=" textoPresentacion">Lo audiovisual en todo</h1>
-                    <a href="#formulariodeconsulta"><input type="button" id="botonaformulario"
-                            title="Hagamos tu idea realidad" class=" mx-auto botonHagamosTuIdeaRealidad "
-                            value="Hagamos tu idea realidad"></a>
+            <div
+                class=" col-xl-12 col-md-12 col-xs-12 d-flex flex-column align-items-center justify-content-center presentacionPagina">
+                <h1 class=" textoPresentacion">Lo audiovisual en todo</h1>
+                <a href="#formulariodeconsulta"><input type="button" id="botonaformulario"
+                        title="Hagamos tu idea realidad" class=" mx-auto botonHagamosTuIdeaRealidad "
+                        value="Hagamos tu idea realidad"></a>
             </div>
-            <section class="col-md-6 col-xs-12 d-flex p-2 container-fluid primerArticulo">
+            <section data-aos="fade-up"
+            data-aos-duration="3000" class="col-md-6 col-xs-12 d-flex p-2 container-fluid  primerArticulo">
                 <div class="imgprimerarticulo">
-                    <img src="img/-33.jpg" alt="imagen portada no te quedes afuera" class="container-fluid imagenIndex1 ">
+                    <img src="img/-33.jpg" alt="imagen portada no te quedes afuera"
+                        class="container-fluid imagenIndex1 ">
                 </div>
                 <div class="textoprimerarticulo">
                     <h2 class="primerArticuloh2">No seas parte del montón</h2>
@@ -66,7 +71,8 @@
                     </p>
                 </div>
             </section>
-            <article class="segundoArticulo col-12 d-flex p-2 align-items-center justify-content-center">
+            <article data-aos="fade-up"
+            data-aos-duration="3000" class="segundoArticulo  col-12 d-flex p-2 align-items-center justify-content-center">
                 <div class="textoSegundoArticulo">
                     <h2 class="tituloConocenos">Conócenos</h2>
                     <p class="parrafoConocenos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt
@@ -85,9 +91,11 @@
                 </div>
             </article>
             <div>
-                <h2 class="tituloDondeEstamos">Donde estamos</h2>
+                <h2 data-aos="fade-up"
+     data-aos-duration="3000" class="tituloDondeEstamos">Donde estamos</h2>
             </div>
-            <article class="cuartoArticulo col-md-6 col-xs-12 d-flex justify-content-center">
+            <article class="cuartoArticulo data-aos="fade-up"
+            data-aos-duration="3000" col-md-6 col-xs-12 d-flex justify-content-center">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13143.878705730527!2d-58.47441909999999!3d-34.55432315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb426ef8d91f7%3A0x452cc5251d73e3ea!2zQm9kZWfDs24gTsO6w7Fleg!5e0!3m2!1ses-419!2sar!4v1695134176316!5m2!1ses-419!2sar"
                     style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
@@ -133,6 +141,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
