@@ -208,6 +208,14 @@ body {
 
 .tercero {
   background-image: linear-gradient(to top right, #3252aa, #8ea3dc);
+  background-color: darkred;
+}
+
+/*Estilizando video*/
+.card {
+  margin-top: 300px;
+  width: 500px;
+  background-color: aqua;
 }
 
 footer {

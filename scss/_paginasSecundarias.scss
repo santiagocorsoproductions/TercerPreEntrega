@@ -15,4 +15,11 @@ margin: 5px;
 }
 .tercero{
     @include colorBloques;
+    background-color: darkred;
+}
+/*Estilizando video*/
+.card{
+    margin-top: 300px;
+    width: 500px;
+    background-color:aqua;
 }
