@@ -1,7 +1,17 @@
 /*Estilizando photography*/
-.articulo{
-margin: 5px;
+.cards{
+    
+    p{
+        font-size: 0.80rem;
+    }
 }
+.articulo{
+height: 450px;
+width: 300px;
+
+
+}
+
 .textoUbicaciones{
     color: red;
     font-size: 3rem;
@@ -15,11 +25,5 @@ margin: 5px;
 }
 .tercero{
     @include colorBloques;
-    background-color: darkred;
 }
 /*Estilizando video*/
-.card{
-    margin-top: 300px;
-    width: 500px;
-    background-color:aqua;
-}

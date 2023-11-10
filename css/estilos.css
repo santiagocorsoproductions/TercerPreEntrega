@@ -57,11 +57,6 @@ body {
 .presentacionPagina:hover {
   backdrop-filter: blur(10px);
 }
-.presentacionPagina .imagenIndex1 {
-  object-fit: contain;
-  width: 720px;
-  border-radius: 7px;
-}
 .presentacionPagina .textoPresentacion {
   font-size: 3rem;
   text-transform: uppercase;
@@ -94,6 +89,11 @@ body {
   display: flex;
   justify-content: space-around;
   width: 100%;
+}
+.primerArticulo .imagenIndex1 {
+  object-fit: contain;
+  width: 720px;
+  border-radius: 7px;
 }
 .primerArticulo .primerArticuloh2 {
   color: #FC8D00;
@@ -188,8 +188,13 @@ body {
 }
 
 /*Estilizando photography*/
+.cards p {
+  font-size: 0.8rem;
+}
+
 .articulo {
-  margin: 5px;
+  height: 450px;
+  width: 300px;
 }
 
 .textoUbicaciones {
@@ -208,17 +213,12 @@ body {
 
 .tercero {
   background-image: linear-gradient(to top right, #3252aa, #8ea3dc);
-  background-color: darkred;
 }
 
 /*Estilizando video*/
-.card {
-  margin-top: 300px;
-  width: 500px;
-  background-color: aqua;
-}
-
 footer {
+  z-index: 10;
+  position: relative;
   display: flex;
   background-color: #051955;
   border: #020c28 4px double;
@@ -239,6 +239,9 @@ footer a {
   /*Media queries para photography*/
   .primero {
     margin-left: 4px;
+  }
+  .card {
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
@@ -304,6 +307,9 @@ footer a {
   .textoUbicaciones {
     font-size: 1rem;
   }
+  .card {
+    width: 100%;
+  }
 }
 @media (max-width: 599px) {
   /*Media queries para index*/
@@ -311,6 +317,9 @@ footer a {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .presentacionPagina .textoPresentacion {
+    font-size: 1.2rem;
   }
   .presentacionPagina .botonHagamosTuIdeaRealidad {
     font-size: 1rem;
@@ -348,6 +357,10 @@ footer a {
     width: 100%;
   }
   /*Media queries para photography*/
+  .card {
+    width: 100%;
+  }
 }
+/*Media queries para video*/
 
 /*# sourceMappingURL=estilos.css.map */

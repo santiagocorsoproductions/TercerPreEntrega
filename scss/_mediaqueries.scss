@@ -1,27 +1,35 @@
-@media (max-width:1200px){
+@media (max-width:1200px) {
+
     /*Media queries para index*/
-    .imagenIndex1{
-width: 85%;
+    .imagenIndex1 {
+        width: 85%;
     }
- /*Media queries para photography*/
- .primero{
-    margin-left: 4px;
- }   
+
+    /*Media queries para photography*/
+    .primero {
+        margin-left: 4px;
+    }
+    .card{
+        width:100%;
+    }
 }
+
 @media (max-width: 768px) {
+
     /*Media queries para index*/
-.textoPresentacion{
-    font-size: 1.5rem;
-    text-align: center;
-}
+    .textoPresentacion {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
     .botonHagamosTuIdeaRealidad {
         font-size: 50%;
     }
 
-    .primerArticulo{
+    .primerArticulo {
         margin: 5px;
     }
-    
+
     .primerArticuloh2 {
         font-size: 1.5rem;
     }
@@ -36,7 +44,8 @@ width: 85%;
         margin: auto;
 
     }
-.botonesConocenos {
+
+    .botonesConocenos {
         display: flex;
         justify-content: center;
         width: 10px;
@@ -79,56 +88,78 @@ width: 85%;
     .footerIndex {
         width: 100%;
     }
+
     /*Media queries para photography*/
-    .textoUbicaciones{
+    .textoUbicaciones {
         font-size: 1rem;
-       
+
     }
+    .card{
+    width:100%;
+}
 
 }
 
 @media (max-width: 599px) {
+
     /*Media queries para index*/
-    .presentacionPagina{
+    .presentacionPagina {
         display: flex;
         flex-direction: column;
         align-items: center;
-    
-    .botonHagamosTuIdeaRealidad{
-       font-size: 1rem;
-       width: 75%;
-       align-self: center;
-       margin-left: 10px;
+        .textoPresentacion{
+            font-size: 1.2rem;
+        }
+
+        .botonHagamosTuIdeaRealidad {
+            font-size: 1rem;
+            width: 75%;
+            align-self: center;
+            margin-left: 10px;
+            
+        }
     }
-}
+
     .primerArticulo {
         display: flex;
         flex-direction: column;
     }
 
-    .cuartoArticulo{
+    .cuartoArticulo {
         width: 95%;
-   .formularioIndex{
-    margin-right: 3vw;
-    margin-top: 20px;
-    width: 300px;
-    height:500px;
-    h2{
-        font-size: 2rem;
 
+        .formularioIndex {
+            margin-right: 3vw;
+            margin-top: 20px;
+            width: 300px;
+            height: 500px;
+
+            h2 {
+                font-size: 2rem;
+
+            }
+
+            input {
+                @include textoTamReducido;
+
+            }
+
+            h3 {
+                @include textoTamReducido;
+                font-size: 0.2rem;
+            }
+
+            select {
+                @include textoTamReducido;
+            }
+        }
     }
-    input{
-       @include textoTamReducido;
-       
-    }
-    h3{
-       @include textoTamReducido;
-       font-size: 0.2rem;
-    }
-    select{
-        @include textoTamReducido;
-    }
-   }
-}
+    
 /*Media queries para photography*/
+.card{
+    width:100%;
 }
+
+}
+
+/*Media queries para video*/

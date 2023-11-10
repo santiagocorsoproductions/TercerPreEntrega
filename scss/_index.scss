@@ -8,11 +8,7 @@
         backdrop-filter: blur(10px);
     }
 
-    .imagenIndex1 {
-        object-fit: contain;
-        width: 720px;
-        border-radius: 7px;
-    }
+    
 
     .textoPresentacion {
         font-size: 3rem;
@@ -49,6 +45,11 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
+    .imagenIndex1 {
+        object-fit: contain;
+        width: 720px;
+        border-radius: 7px;
+    }
     
 
     .primerArticuloh2 {
