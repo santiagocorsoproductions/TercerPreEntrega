@@ -27,3 +27,6 @@ width: 300px;
     @include colorBloques;
 }
 /*Estilizando video*/
+.card{
+    object-fit: contain;
+}
