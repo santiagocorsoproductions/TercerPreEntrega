@@ -216,6 +216,20 @@ body {
 }
 
 /*Estilizando video*/
+.card {
+  object-fit: scale-down;
+}
+
+/*Estilizando opinions*/
+.formularioOpinions {
+  border: 1px #FC8D00 outset;
+  background-color: #5f3702;
+  width: 400px;
+}
+.formularioOpinions h2 {
+  color: blue;
+}
+
 footer {
   z-index: 10;
   position: relative;

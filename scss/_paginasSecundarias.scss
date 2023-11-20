@@ -1,32 +1,48 @@
 /*Estilizando photography*/
-.cards{
-    
-    p{
+.cards {
+
+    p {
         font-size: 0.80rem;
     }
 }
-.articulo{
-height: 450px;
-width: 300px;
+
+.articulo {
+    height: 450px;
+    width: 300px;
 
 
 }
 
-.textoUbicaciones{
+.textoUbicaciones {
     color: red;
     font-size: 3rem;
     text-align: center;
 }
-.primero{
+
+.primero {
     @include colorBloques;
 }
-.segundo{
+
+.segundo {
     @include colorBloques;
 }
-.tercero{
+
+.tercero {
     @include colorBloques;
 }
+
 /*Estilizando video*/
-.card{
-    object-fit: contain;
+.card {
+    object-fit: scale-down;
+}
+
+/*Estilizando opinions*/
+.formularioOpinions {
+    border: 1px $letras--naranjas outset;
+    background-color: #5f3702;
+    width: 400px;
+
+    h2 {
+        color: blue;
+    }
 }
