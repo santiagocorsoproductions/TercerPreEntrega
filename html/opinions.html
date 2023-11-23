@@ -48,25 +48,27 @@
     </header>
     <main class="container-fluid cards my-3 ">
         <div>
-        <h1 class="text-center text-primary-emphasis">Dejanos tu opinión más abajo</h1>
-        <a href="#formulariodeconsultayopinion" class="d-flex justify-content-center"><button type="button" id="botonaformulario"
-                title="Hagamos tu idea realidad" class=" bg-primary shadow rounded p-3 mb-5 botonFormularioopinions">Realiza tu
-                consulta/opinión</button></a>
+            <h1 class="text-center text-primary-emphasis">Dejanos tu opinión más abajo</h1>
+            <a href="#formulariodeconsultayopinion" class="d-flex justify-content-center"><button type="button"
+                    id="botonaformulario" title="Hagamos tu idea realidad"
+                    class=" bg-primary shadow rounded p-3 mb-5 botonFormularioopinions">Realiza tu
+                    consulta/opinión</button></a>
         </div>
 
-       
+
         <div class="row m-2" id="articuloprimero">
             <div class=" col-12  mb-1">
-                <div class="d-flex ">
-                    <div class="ratio ratio-16x9">
-                        <iframe 
+                <div
+                    class="d-flex justify-content-start flex-column flex-md-row flex-sm-column flex-md-nowrap flex-sm-wrap primerVideo  ">
+                    <div class=" flex-fill flex-grow-1 ">
+                        <iframe class="ratio ratio-16x9 "
                             src="https://www.youtube.com/embed/XULg5sbiRSo?si=42HjZhps5VU1E0Lt"
-                            title="YouTube video player" frameborder="0"
+                            frameborder="1"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
 
                     </div>
-                    <article class="articulo " id="articuloUno">
+                    <article class="flex-fill textoPrimerVideo " id="articuloUno">
                         <h2 class="">Experiencia con Sergio</h2>
                         <p class="">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe perspiciatis cum libero,
@@ -84,43 +86,46 @@
             </div>
         </div>
         <div class="row m-2" id="articuloprimero">
-            <div class=" col-12  mb-1">
-                <div class="d-flex ">
-                    <div class="ratio ratio-16x9">
-                        <iframe 
+            <div class=" col-12  mb-1 ">
+                <div
+                    class="d-flex justify-content-end flex-column-reverse flex-md-row flex-sm-column-reverse flex-md-nowrap flex-sm-wrap primerVideo mb-5">
+                    <article class="textoPrimerVideo " id="articuloUno">
+                        <h2 class="">Experiencia con Sergio</h2>
+                        <p class="">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe perspiciatis cum libero,
+                            optio
+                            ut id
+                            ipsa voluptatum ducimus rem at, quis cupiditate dicta. Autem dolores quidem, aspernatur
+                            optio
+                            sint
+                            facere!
+
+                        </p>
+                    </article>
+                    <div class="">
+                        <iframe class="ratio ratio-16x9"
                             src="https://www.youtube.com/embed/0p8LD-_5cTU?si=QNwFF0SP1bdcldrp"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
 
                     </div>
-                    <article class="articulo " id="articuloUno">
-                        <h2 class="">Experiencia con Sergio</h2>
-                        <p class="">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe perspiciatis cum libero,
-                            optio
-                            ut id
-                            ipsa voluptatum ducimus rem at, quis cupiditate dicta. Autem dolores quidem, aspernatur
-                            optio
-                            sint
-                            facere!
 
-                        </p>
-                    </article>
 
                 </div>
             </div>
         </div>
-        <section class="container ">
-            <form id="formulariodeconsultayopinion" class="formularioOpinions ">
+        <section class="container form ">
+            <div class="d-flex justify-content-center">
+            <form id="formulariodeconsultayopinion" class="formularioOpinions w-25 h-25 p-3 rounded">
                 <h2 class="text-center">Contactanos!</h2>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Ingrese mail aquí</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">Estos datos no son compartidos.</div>
+                    <div id="emailHelp" class="form-text text-warning">(Estos datos no son compartidos.)</div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <label for="inputComentario1" class="form-label">Ingrese aquí su humilde opinion</label>
                     <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
                 <div class="mb-3 form-check">
@@ -130,6 +135,7 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
+        </div>
         </section>
     </main>
 

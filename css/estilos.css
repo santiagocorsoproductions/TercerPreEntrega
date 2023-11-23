@@ -230,6 +230,26 @@ body {
   color: blue;
 }
 
+/*Estilizando opinions*/
+.primerVideo h2 {
+  margin-left: 5px;
+  color: rgb(223, 88, 39);
+}
+.primerVideo p {
+  margin-left: 5px;
+  color: rgb(223, 88, 39);
+}
+
+.formularioOpinions label {
+  color: rgb(223, 88, 39);
+}
+.formularioOpinions input {
+  color: rgb(223, 88, 39);
+}
+.formularioOpinions button {
+  color: rgb(223, 88, 39);
+}
+
 footer {
   z-index: 10;
   position: relative;
@@ -325,7 +345,7 @@ footer a {
     width: 100%;
   }
 }
-@media (max-width: 599px) {
+@media (max-width: 576px) {
   /*Media queries para index*/
   .presentacionPagina {
     display: flex;
@@ -374,7 +394,16 @@ footer a {
   .card {
     width: 100%;
   }
+  /*Media queries para opinions*/
+  .primerVideo .textoPrimerVideo {
+    margin: auto;
+  }
+  .primerVideo .textoPrimerVideo h2 {
+    text-align: center;
+  }
+  .primerVideo .textoPrimerVideo p {
+    text-align: center;
+  }
 }
-/*Media queries para video*/
 
 /*# sourceMappingURL=estilos.css.map */

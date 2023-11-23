@@ -7,16 +7,19 @@
     <meta name="description" content="Nos adaptamos a tu idea o sueño audiovisual">
     <title>About Us -- Santiagocorso Productions</title>
     <link rel="shortcut icon" href="../img/-1.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
-    <header class="navbar navbar-expand-lg fixed-top menuNav ">
+    <!-- <header class="navbar navbar-expand-lg fixed-top menuNav ">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="../img/imagen-logo.jpg" alt="Imagen santiago corso productions"
                     class="imagenLogo img-fluid"></a>
-            <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <nav class="collapse navbar-collapse" id="navbarNav">
@@ -41,58 +44,41 @@
                     </li>
                 </ul>
             </nav>
-        </div> 
-    </header>
-    <main class="mainAboutUs">
-        
-            <article class="articuloPrimero">
-                <iframe src="https://www.youtube.com/embed/8nyZR6KYU-U?si=N_Y1RNohbfDxnZtX"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-            </article>
-            
-            <article class="articuloSegundo">
-                <h2>Cómo me manejo en mi mundo audiovisual propio</h2>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe perspiciatis cum libero, optio
-                    ut id
-                    ipsa voluptatum ducimus rem at, quis cupiditate dicta. Autem dolores quidem, aspernatur optio
-                    sint
-                    facere!
-                </p>
-            </article>
-        
-            <article class="articuloTercero">
-                <div>
-                <img src="../img/setfilmacion.jfif" alt="Set de filmacion" class="imgMisInstalaciones">
-                </div>
-                <div>
-                <h2 class="tituloArticuloMisInstalaciones">mis instalaciones</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet corporis rem! Deserunt
-                    recusandae, neque nam nulla nisi, repellendus cumque officia tenetur, molestiae odio totam.
-                    Perferendis sapiente perspiciatis delectus.</p>
-                </div>
-            </article>
-            
-            <form id="formulariodeconsultayopinion" class="formularioAboutUs">
-                <h2>Contactanos!</h2>
-                <label for="Nombre">Nombre</label>
-                <input type="text" placeholder="Escriba aqui su nombre" id="Nombre">
-                <br><br>
-                <label for="Mail">Mail</label>
-                <input type="email" placeholder="escriba un mail para contactar" id="Mail" required>
-                <br><br>
-                <textarea name="dejaTuOpinion" id="dejaTuOpinion" cols="30" rows="10"
-                    placeholder="Haznos saber cómo fué tu experiencia trabajando con nosotros"></textarea>
-                <br><br>
-                <input type="submit" value="Enivar información">
-                <br><br>
-                <input type="reset" value="Borrar todo">
-                <br><br>
-            </form>
+        </div>
+    </header> -->
+    <main class="mainAboutUs container-fluid">
 
-    
+        <div class="row m-2" id="articuloprimero">
+            <div class=" col-12  col-md-6 mb-1">
+                <div
+                    class="d-flex justify-content-start flex-column flex-md-row flex-sm-column flex-md-nowrap flex-sm-wrap primerVideo  ">
+                    <div class=" flex-fill flex-grow-1 ">
+                        <iframe class="ratio ratio-16x9 "
+                            src="https://www.youtube.com/embed/XULg5sbiRSo?si=42HjZhps5VU1E0Lt" frameborder="1"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-md-6  mb-1">
+                <article class="flex-fill textoPrimerVideo " id="articuloUno">
+                    <h2 class="">Experiencia con Sergio</h2>
+                    <p class="">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe perspiciatis cum libero,
+                        optio
+                        ut id
+                        ipsa voluptatum ducimus rem at, quis cupiditate dicta. Autem dolores quidem, aspernatur
+                        optio
+                        sint
+                        facere!
+
+                    </p>
+                </article>
+            </div>
+
+        </div>
+
+
     </main>
 
     <footer class="footerIndex">
@@ -104,6 +90,9 @@
                 alt="LinkedinIcon" class="LinkedinIcon"></a>
         <p>Derechos reservados 2023 ©</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

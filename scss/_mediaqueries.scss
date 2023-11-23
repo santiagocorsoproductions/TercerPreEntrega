@@ -100,7 +100,7 @@
 
 }
 
-@media (max-width: 599px) {
+@media (max-width: 576px) {
 
     /*Media queries para index*/
     .presentacionPagina {
@@ -159,7 +159,19 @@
 .card{
     width:100%;
 }
-
+/*Media queries para opinions*/
+.primerVideo{
+    .textoPrimerVideo{
+margin: auto;
+   
+    h2{
+        text-align: center;
+        
+    }
+    p{
+        text-align: center;
+    }
+}
 }
 
-/*Media queries para video*/
+}
