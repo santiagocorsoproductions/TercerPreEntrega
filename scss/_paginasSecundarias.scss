@@ -39,14 +39,13 @@
 /*Estilizando opinions*/
 .formularioOpinions {
     border: 1px $letras--naranjas outset;
-    background-color: #5f3702;
+    background-color:#eef214;
     width: 400px;
 
     h2 {
         color: blue;
     }
 }
-/*Estilizando opinions*/
 .primerVideo{
     h2{
         margin-left: 5px;
@@ -59,12 +58,26 @@
 }
 .formularioOpinions{
     label{
-        color: rgb(223, 88, 39);
+        color: blue;
     }
     input{
-        color: rgb(223, 88, 39);
+        color: blue;
     }
     button{
-        color: rgb(223, 88, 39);
+        color: #f28e14;
+        background-color: rgba(0, 0, 255, 0.852);
     }
+    .datosNoCompartidos{
+        color: blue;
+    }
+}
+
+/*Estilizando aboutUs*/
+.aboutUsPrimeroTexto{
+    background-color: bisque;
+    border-radius: 70px;
+}
+.aboutUsSegundoTexto{
+    background-color: bisque;
+    border-radius: 70px;
 }

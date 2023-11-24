@@ -1,12 +1,13 @@
 @mixin formularios {
     border: 1px $letras--naranjas outset;
-    background-color: #5f3702;
+    background-color: #eef214;
     margin-left: 20px;
     border-radius: 10px;
     /* height:fit-content;  no hace falta la maoyria del tiempo poner height y dejar que se autoajuste*/
     width: 400px;
     display: flex;
     flex-direction: column;
+    padding: 10px;
 
     h2 {
         font-size: 4rem;
@@ -17,10 +18,11 @@
         content: 10px;
     }
 
-    input,
+    label,input,
     select,
     h3,
     p {
+        color: #FC8D00;
         margin: 5px;
     }
 

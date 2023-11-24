@@ -28,8 +28,8 @@ body {
   justify-content: space-around;
 }
 .menuNav .imagenLogo {
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
   border-radius: 2px;
 }
 .menuNav ul {
@@ -157,13 +157,14 @@ body {
 }
 .cuartoArticulo .formularioIndex {
   border: 1px #FC8D00 outset;
-  background-color: #5f3702;
+  background-color: #eef214;
   margin-left: 20px;
   border-radius: 10px;
   /* height:fit-content;  no hace falta la maoyria del tiempo poner height y dejar que se autoajuste*/
   width: 400px;
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 .cuartoArticulo .formularioIndex h2 {
   font-size: 4rem;
@@ -173,10 +174,11 @@ body {
   padding: 10px;
   content: 10px;
 }
-.cuartoArticulo .formularioIndex input,
+.cuartoArticulo .formularioIndex label, .cuartoArticulo .formularioIndex input,
 .cuartoArticulo .formularioIndex select,
 .cuartoArticulo .formularioIndex h3,
 .cuartoArticulo .formularioIndex p {
+  color: #FC8D00;
   margin: 5px;
 }
 .cuartoArticulo .formularioIndex .botonEnviar {
@@ -185,6 +187,10 @@ body {
 }
 .cuartoArticulo .formularioIndex .botonResetear {
   float: right;
+}
+
+.comingSoon {
+  width: 70px;
 }
 
 /*Estilizando photography*/
@@ -223,14 +229,13 @@ body {
 /*Estilizando opinions*/
 .formularioOpinions {
   border: 1px #FC8D00 outset;
-  background-color: #5f3702;
+  background-color: #eef214;
   width: 400px;
 }
 .formularioOpinions h2 {
   color: blue;
 }
 
-/*Estilizando opinions*/
 .primerVideo h2 {
   margin-left: 5px;
   color: rgb(223, 88, 39);
@@ -241,21 +246,35 @@ body {
 }
 
 .formularioOpinions label {
-  color: rgb(223, 88, 39);
+  color: blue;
 }
 .formularioOpinions input {
-  color: rgb(223, 88, 39);
+  color: blue;
 }
 .formularioOpinions button {
-  color: rgb(223, 88, 39);
+  color: #f28e14;
+  background-color: rgba(0, 0, 255, 0.852);
+}
+.formularioOpinions .datosNoCompartidos {
+  color: blue;
+}
+
+/*Estilizando aboutUs*/
+.aboutUsPrimeroTexto {
+  background-color: bisque;
+  border-radius: 70px;
+}
+
+.aboutUsSegundoTexto {
+  background-color: bisque;
+  border-radius: 70px;
 }
 
 footer {
   z-index: 10;
   position: relative;
   display: flex;
-  background-color: #051955;
-  border: #020c28 4px double;
+  background-color: #64ffa7;
 }
 footer img {
   width: 50px;
@@ -344,6 +363,10 @@ footer a {
   .card {
     width: 100%;
   }
+  /*Media queries para opinions*/
+  .formularioOpinions h2 {
+    font-size: 1.3rem;
+  }
 }
 @media (max-width: 576px) {
   /*Media queries para index*/
@@ -364,6 +387,9 @@ footer a {
   .primerArticulo {
     display: flex;
     flex-direction: column;
+  }
+  .primerArticuloh2 {
+    font-size: 0.5rem;
   }
   .cuartoArticulo {
     width: 95%;

@@ -97,6 +97,12 @@
     .card{
     width:100%;
 }
+/*Media queries para opinions*/
+.formularioOpinions{
+    h2{
+        font-size: 1.3rem;
+    }
+}
 
 }
 
@@ -119,10 +125,13 @@
             
         }
     }
-
+    
     .primerArticulo {
         display: flex;
         flex-direction: column;
+    }
+    .primerArticuloh2{
+        font-size: 0.5rem;
     }
 
     .cuartoArticulo {
